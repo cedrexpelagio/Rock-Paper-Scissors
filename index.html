@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
 </head>
-<body>
 
+<body>
+    <header>
+        <div class="game-title">
+            <img class="game-title-img" width="500px" src="./assets/game-title.png"
+                alt="Adventure time inspired title that says rock paper scissors time">
+        </div>
+        <div class="scoreboard">
+            <span>Your Score: <span id="humanScore">0</span></span>
+            <span>Opponent Score: <span id="computerScore">0</span></span>
+        </div>
+    </header>
+    <main>
+        <!-- Game Card: Rock Paper Scissors Fight Display -->
+        <section>
+            <div class="game-card">
+                <div class="human-card">
+                    <h2>Your Side</h2>
+                    <img id="human-hand" width="200px" src="./assets/rock.png" alt="Hand">
+                </div>
+                <div class="com-card">
+                    <h2>Enemy Side</h2>
+                    <img id="computer-hand" width="200px" src="./assets/enemy-rock.png" alt="Hand">
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Card: User can choice between Rock Paper and Scissor -->
+        <section>
+            <div class="skill">
+                <h2>Skills</h2>
+                <div class="skill-card" value="Rock">
+                    <label for="rock">Rock</label>
+                    <img id="rock" width="150px" src="./assets/rock.png" alt="Close fist hand in cartoon style">
+                </div>
+                <div class="skill-card" value="Paper">
+                    <label for="paper">Paper</label>
+                    <img id="paper" width="150px" src="./assets/paper.png" alt="Open hand in cartoon style">
+                </div>
+                <div class="skill-card" value="Scissor">
+                    <label for="scissor">Scissor</label>
+                    <img id="scissor" width="150px" src="./assets/scissor.png"
+                        alt="Hand with two fingers pointing like a scissor in cartoon style">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+         <p class="footer-text">&copy; Cedrex Pelagio. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
