@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+:root {
+    --primary-color: #306ecd;
+    --primary-darken: #16448a;
+    --secondary-color: white;
+    --tertiary-color: #855E42;
+    --tertiary-darken: #3f2614;
+    --skill-card: #39a024;
+
+    --font-main: 'Fredoka', cursive, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    font-family: var(--font-main);
+    color: var(--secondary-color);
+}
+
+.game-header {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid var(--primary-darken);
+    border-radius: 12px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.game-title-img {
+    width: 80vw;
+}
