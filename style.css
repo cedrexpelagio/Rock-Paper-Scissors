@@ -60,11 +60,12 @@ body {
 .bmo-img {
     width: 15vw;
     background-color: var(--primary-darken);
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 .game-title-img,
-.bmo-section {
+.bmo-section, 
+.skill {
     width: 80vw;
 }
 
@@ -104,7 +105,6 @@ body {
     border-radius: 12px;
     box-sizing: border-box;
     padding: 20px;
-    width: 80vw;
     margin-bottom: 50px;
 }
 
@@ -127,4 +127,48 @@ body {
 
 footer {
     margin: 30px auto;
+}
+
+@media(min-width: 760px){
+.game-title-img,
+.bmo-section, 
+.skill {
+    width: 40vw;
+}
+
+.game-card img {
+    width: 16vw;
+}
+
+.skill-card {
+    width: 10vw;
+}
+
+.bmo-img {
+    width: 8vw;
+    border-radius: 12px;
+}
+
+}
+
+@media(min-width: 1000px){
+.game-title-img,
+.bmo-section, 
+.skill {
+    width: 28vw;
+}
+
+.game-card img {
+    width: 10vw;
+}
+
+.skill-card {
+    width: 8vw;
+}
+
+.bmo-img {
+    width: 5vw;
+    border-radius: 10px;
+}
+
 }
