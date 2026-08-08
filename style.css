@@ -101,7 +101,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: var(--tertiary-color);
-    border: 2px solid #3f2614;
+    border: 2px solid var(--tertiary-darken);
     border-radius: 12px;
     box-sizing: border-box;
     padding: 20px;
