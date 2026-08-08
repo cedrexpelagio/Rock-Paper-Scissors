@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
     background-color: var(--primary-color);
     font-family: var(--font-main);
     color: var(--secondary-color);
@@ -43,4 +44,30 @@ body {
 
 .game-title-img {
     width: 80vw;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.game-card h2 {
+    font-size: 20px;
+}
+
+.game-card img {
+    width: 30vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill img {
+    width: 10px;
 }
