@@ -21,6 +21,24 @@ A simple browser-based Rock Paper Scissors game built for The Odin Project. Play
 2. Repeat the process for 5 rounds to see the final result
 3. Refresh or click F5 to restart the game
 
+## 👨‍💻 Run Locally
+
+1. Clone the repository
+```bash
+   git clone https://github.com/cedrexpelagio/Rock-Paper-Scissors.git
+```
+2. Navigate to the project folder
+```bash
+   cd Rock-Paper-Scissors
+```
+3. Open `index.html` in your browser (double-click it, or right-click → Open With → your browser)
+
+## 🔮 Future Improvements
+- Add a "best of X rounds" option instead of a fixed 5 rounds
+- Add sound effects for wins, losses, and ties
+- Add a dark mode toggle
+- Add a game history log showing past rounds
+
 ## ⚙ Process
 
 I started the project by brainstorming features and a theme. First, I structured the HTML while gathering assets like images — including an AI-generated game title and hand character poses. Second, I styled the HTML using CSS and used media queries for different screen sizes. Then I added game logic using JavaScript, and learned about keyframes to add the hand-shaking animation. I also started learning Document Object Model (DOM) manipulation to change hand images, scores, and result text. Lastly, I finalized the game design and tested it on my mobile phone and laptop.
