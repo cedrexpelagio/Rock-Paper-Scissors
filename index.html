@@ -7,6 +7,7 @@
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/animation.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -51,17 +52,17 @@
         <section>
             <h2>Skills</h2>
             <div class="skill">
-                <div class="skill-card" value="Rock">
-                    <label for="rock">Rock</label>
-                    <img id="rock" src="./assets/rock.png" alt="Close fist hand in cartoon style">
+                <div id="rock" class="skill-card" data-value="Rock">
+                    <label for="rock">Rock</label>  
+                    <img src="./assets/rock.png" alt="Close fist hand in cartoon style">
                 </div>
-                <div class="skill-card" value="Paper">
+                <div id="paper" class="skill-card" data-value="Paper">
                     <label for="paper">Paper</label>
-                    <img id="paper" src="./assets/paper.png" alt="Open hand in cartoon style">
+                    <img src="./assets/paper.png" alt="Open hand in cartoon style">
                 </div>
-                <div class="skill-card" value="Scissor">
+                <div id="scissor" class="skill-card" data-value="Scissor">
                     <label for="scissor">Scissor</label>
-                    <img id="scissor" src="./assets/scissor.png"
+                    <img src="./assets/scissor.png"
                         alt="Hand with two fingers pointing like a scissor in cartoon style">
                 </div>
             </div>
