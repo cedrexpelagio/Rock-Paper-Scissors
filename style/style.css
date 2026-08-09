@@ -70,7 +70,12 @@ body {
 }
 
 .bmo-comment {
-    font-size: 1em;
+    font-size: 0.9em;
+}
+
+#bmo-try-again {
+    font-size: 0.6em;
+    color: rgb(211, 211, 211);
 }
 
 .game-card {
@@ -151,6 +156,14 @@ footer {
 .bmo-img {
     width: 8vw;
     border-radius: 12px;
+}
+
+.bmo-comment {
+    font-size: 1em;
+}
+
+#bmo-try-again {
+    font-size: 0.8em;
 }
 
 }
