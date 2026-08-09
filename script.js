@@ -60,10 +60,26 @@ function playRound(humanChoice, computerChoice) {
     document.getElementById('computer-hand').src = `./assets/enemy-${computerChoice.toLowerCase()}.png`;
 
 }
-    skillCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const humanChoice = card.dataset.value; // "Rock", "Paper", or "Scissor"
-            const computerChoice = comChoiceConverter(getComputerchoice(3));
+
+skillCards.forEach(card => {
+    card.addEventListener('click', () => {
+        const humanChoice = card.dataset.value;
+        const computerChoice = comChoiceConverter(getComputerchoice(3));
+
+        const humanHand = document.getElementById('human-hand');
+        const computerHand = document.getElementById('computer-hand');
+
+        // reset images to rock and start shake
+        humanHand.src = './assets/rock.png';
+        computerHand.src = './assets/enemy-rock.png';
+        humanHand.classList.add('shaking');
+        computerHand.classList.add('shaking');
+
+        // after the shake finishes, remove animation class and reveal choices
+        setTimeout(() => {
+            humanHand.classList.remove('shaking');
+            computerHand.classList.remove('shaking');
             playRound(humanChoice, computerChoice);
-        });
+        }, 600); // match this to the animation duration above
     });
+});

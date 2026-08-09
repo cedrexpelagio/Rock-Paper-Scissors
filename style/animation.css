@@ -14,3 +14,18 @@
     transform: translateY(3px);
     background-color: var(--skill-card-darken);
 }
+
+@keyframes handShake {
+    0%   { transform: translateY(0); }
+    15%  { transform: translateY(-15px); }
+    30%  { transform: translateY(0); }
+    45%  { transform: translateY(-15px); }
+    60%  { transform: translateY(0); }
+    75%  { transform: translateY(-15px); }
+    90%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+.shaking {
+    animation: handShake 0.6s ease-in-out;
+}
